@@ -10,7 +10,7 @@ const URL = "https://jamstack-comments.netlify.com";
 /*
   Our serverless function handler
 */
-// export function handler(event, context, callback) {
+function handler(event, context, callback) {
 
   // get the arguments from the notification
   var body = JSON.parse(event.body);
@@ -64,4 +64,5 @@ const URL = "https://jamstack-comments.netlify.com";
       return console.log(msg);
     });
 
-// }
+}
+module.exports = handler;
