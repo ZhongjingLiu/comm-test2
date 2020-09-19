@@ -65,4 +65,4 @@ function handler(event, context, callback) {
     });
 
 }
-module.exports = handler;
+module.exports.handler = handler;
