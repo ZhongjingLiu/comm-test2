@@ -7,7 +7,7 @@ const {
 } = process.env;
 
 // hardcoding this for a moment... TODO: replace request with somethign that follows redirects
-const URL = "https://jamstack-comments.netlify.com/";
+const URL = "https://whocomments2.netlify.app/";
 
 /*
   delete this submission via the api
@@ -61,7 +61,7 @@ module.exports.handler = (event, context, callback) => {
           'name': data.name,
           'comment': data.comment
         };
-        var approvedURL = url;
+        var approvedURL = URL;
 
         console.log("Posting to", approvedURL);
         console.log(payload);
